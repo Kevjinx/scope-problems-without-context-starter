@@ -38,9 +38,7 @@ const countDownTimer = (n) => {
     return "Happy New Year!"
   }
 
-
   const func = () => {
-
     n--;
     if (n === 0) {
       return "Happy New Year!"
@@ -49,7 +47,6 @@ const countDownTimer = (n) => {
     }
   }
   return func;
-
 
 }
 
