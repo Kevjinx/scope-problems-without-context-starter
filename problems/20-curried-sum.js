@@ -44,6 +44,40 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 
 // your code here
 
+const curriedSum = (num) => {
+  let arr = [];
+  let count = 0;
+
+  return func = numFunc => {
+    count++
+    arr.push(numFunc)
+    if (num === count) {
+      return arr.reduce((acc, el) => acc + el)
+    }
+    return func
+  }
+}
+
+
+
+
+const sum = curriedSum(4); // returns a function
+console.log(sum(5))// returns a function
+console.log(sum(20)) // returns a function
+console.log(sum(30)) // returns a function
+console.log(sum(20)); // => returns 75
+
+// 2
+// this function can also be invoked like this:
+ // => returns 10
+
+
+
+
+
+
+
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

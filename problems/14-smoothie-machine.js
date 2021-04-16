@@ -26,7 +26,7 @@ console.log(smoothie2("pineapple"));
 //?????   when assigning smoothiemachine to a variable, it doesn't invoking smoothiemachine?????
 //how to return
 const smoothieMachine = () => {
-  let order = 'I/m having a smoothie with ';
+  let order = "I'm having a smoothie with ";
   let firstCount = 0;
   return (...item) => {
     if (firstCount === 0) {

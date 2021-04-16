@@ -12,24 +12,11 @@ arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b
 
 // your code here
 
-const arrowMirrorArray = arr => {
-
-  return [arr.concat(arr.reverse())];
-
-  // let reverse = [];
-  // for (let i = arr.length - 1; i >= 0; i--) {
-  //   const element = arr[i];
-  //   reverse.push(element);
-  // }
-  // arr = arr.concat(reverse)
-  // console.log(arr);
-  // return arr;
-
-}
+const arrowMirrorArray = arr => [...arr, ...arr.reverse()]
 
 
-arrowMirrorArray([1,2,3]); // => [ 1, 2, 3, 3, 2, 1 ]
-arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
+console.log(arrowMirrorArray([1,2,3])); // => [ 1, 2, 3, 3, 2, 1 ]
+console.log(arrowMirrorArray(['a', 'b', 'c', 'd'])); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
 
 
 
