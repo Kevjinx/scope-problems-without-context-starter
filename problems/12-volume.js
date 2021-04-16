@@ -24,15 +24,26 @@ console.log(table2(75)); // STILL prints 6
 
 ***********************************************************************/
 
-const recVolume = height => {
-  return function (width){
-    return function (length) {
-      return width * height* length;
+const recVolume = value => {
+  let count = 1
+
+  return func = (funcValue) => {
+    if (count === 3) {
+      return value;
+    } else {
+      count ++;
+      value *= funcValue;
+      if (count === 3) {
+        return value;
+      } else {
+        return func
+      }
     }
   }
+
 }
 let table2 = recVolume(3); // returns a function
-table2(2); // returns a function
+console.log(table2(2));; // returns a function
 console.log(table2(1)); // prints 6
 console.log(table2(75)); // STILL prints 6
 
